@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title> WALL-E: The voice assistant</title>
+        <!-- <link rel="stylesheet" href="first.css">
+         -->
+
+        </head>
+        <body>
+            <style>
+                /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 3;
+    background: #0b1d3a; /* dark bluish */
+    color: #ffffff;
+}
+
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+    background: #4350b1;
+}
+
+.menu-container .logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container .logo img {
+    width: 30px; /* Make the logo smaller */
+    height: auto;
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 15px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.signup-btn {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+.signup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.signup-btn:hover {
+    border: 1px solid #a174eb;
+    background: #a174eb;
+}
+
+.banner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.app-text {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.app-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.app-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #919191;
+}
+
+.app-picture {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.app-picture img {
+    width: 80%;
+    max-width: 400px;
+}
+
+.quick-links {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #db1bf6, #19d7f9);
+    padding: 10px 0;
+}
+
+.quick-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-links ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.quick-links ul li .fa {
+    font-size: 25px;
+    color: #fff;
+}
+
+.quick-links ul li p {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Services Section */
+.services {
+    padding: 150px;
+    background-color: #06127d;
+    text-align: center;
+  }
+
+  .services h1 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+
+
+.services p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.services-col {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #0a0707;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.services-col:hover {
+    box-shadow: 0 0 20px rgba(21, 17, 17, 0.2);
+}
+
+.services-col img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.services-col h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.contact {
+    padding: 150px;
+    background-color: #0e055e;
+    text-align: center;
+  }
+
+  .contact h1 {
+    color: #c1d9f7;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+
+
+.contact p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 3;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .app-text, .app-picture {
+        flex: 1 1 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .services-col {
+        flex: 1 1 100%;
+    }
+}
+
+            </style>
+            <div class="menu-container">
+                <div class="logo">
+                    <img src="ligi.jpg" alt="Logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                    <a href="VoiceAssistant.html"><button class="cta-btn" id="getStartedBtn">START</button></a>
+      </section>
+                </a>
+            </div>
+            
+            <div class="banner">
+                <div class="app-text">
+                    <h1>HAVE A QUESTION?<br> Ask WALL-E now!.</h1>
+                    <p>WALL-E is a voice assistant , who will help you ask your mind out without <br>the hussel of using hands. No writing or typing work instead just 
+                        have a <br>WALL-E to hesr your questions . Our main motive is to <br>help especially abelled person , our voice assistant<br> will help
+                    them to use their devices without the load of thinging about what <br>and which key to press. </p>
+            </div>
+            <div class="app-picture">
+                <img src ="(1)Wall.E.png">
+            </div>
+            <div class="quick-links">
+                <ul>
+                    <li><i class="fa fa-share-alt"></i><p>SHARE TO</p></li>
+                    <li><i class="fa fa-audio-description"></i><p>RECENT NEWS</p></li>
+                </ul>
+            </div>
+            </div>
+        
+        <!------services------>
+        <div class="Services">
+            <h1> Services We Provide</h1>
+            <p>Helping users to find answer just like GOOGLE. We are not a bigger than GOOGLE but consider<br> ourself a part of it. </p>
+        <div class="row">
+            <div class="services-col">
+                <img src="homework.jpg">
+                <h3>Homeworks</h3>
+                <p> As a student , homework gives a lot of headache which not easy to do
+                     . So this voice assistant <br>will also solve ur mathematical sums with ease and will 
+                     <br>also find the asnwers to ur riddles. Just ask WALL-E<br> "search this or that"</p>
+        </div>
+        <div class="services-col">
+            <img src="location.jpg">
+            <h3>Location</h3>
+            <p> For people who like travelling , finding the correct and shortest route gives a lot of headache which not easy to fine <br>
+                 . So this voice assistant will also find the shortest , traffic free<br> and accurate location route for your destination 
+                  Just ask WALL-E<br> "location for this or that"</p>
+    </div>
+    <div class="services-col">
+        <img src="blind.jpg">
+        <h3>especially abelled people</h3>
+        <p> People who are especially abelled, can also use this voice assistant for <br> 
+            opening different apps on their phone without looking at it<br>or can contact to people for calling
+             or texting. <br> Just ask WALL-E "call my daugther or son"</p>
+</div>
+        </div>
+
+
+<div class="Contact">
+        <h4>SIGN UP WITH US</h4>
+        <h2>WALL-E helps you talk, and interact in easy way.</h2>
+        <p>
+            Wall-e helps you see and hear the world more clearly — your voice, . wall-e understands you — with ears that truly listen.
+          
+        </p>
+        <p>.</p>
+        <div class="contact-info" id="Help">
+            <div>
+              <h4>Get In Touch</h4>
+              <p>Monday – Friday<br>10:00 am — 6:00 pm</p>
+              <p><a href="mailto:youremail@example.com">sakshisaxena443@gmail.com
+              </a></p>
+              <p>+91-7667345585</p>
+            </div>
+      
+            <form id="contactForm">
+              <h4>Sign Up With Us</h4>
+              <input type="text" id="name" name="name" placeholder="Full Name *" required />
+              <input type="email" id="email" name="email" placeholder="Email *" required />
+              <textarea id="message" name="message" rows="4" placeholder="Your FeedBack (optional)"></textarea>
+              <button type="submit">Submit Request</button>
+            </form>
+          </div>
+            
+
+
+
+            </body>
+            </html>
